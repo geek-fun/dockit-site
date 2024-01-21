@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "dockit"
+  name: "DocKit"
   text: A better NoSQL/NewSQL GUI client
   tagline: Explore your data any time from your laptop
   actions:
@@ -21,5 +21,7 @@ features:
     details: Keep your connections in desktop apps, move the dependencies of dashboard tools
   - title: File persistence
     details: Save your code in your machine as file, never lost
+  - title: Multi engines support
+    details: Support Elasticsearch, OpenSearch, and more to come
 ---
 

@@ -2,8 +2,10 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "dockit",
-  description: " Explore your data any time from your laptop",
+  title: "DocKit",
+  description: "Explore your data any time from your laptop",
+  outDir: '../dist',
+  cacheDir: '../cache',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
