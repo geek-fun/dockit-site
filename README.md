@@ -1,3 +1,3 @@
-# dockit official site
+# DocKit official site
 
 
