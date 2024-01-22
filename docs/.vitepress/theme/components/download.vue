@@ -19,7 +19,7 @@ const downloadFn = async (event) => {
   // const links = await getLatestLinks();
   // const link = links.find((item) => item.name.includes(platform[window.navigator.platform]));
   // console.log('downloadFn', fetch(link.url))
-  console.log('downloadFn',window.navigator)
+  console.log('downloadFn',await navigator.userAgentData.getHighEntropyValues(['architecture']))
   console.log('downloadFnJson',{ nv: JSON.stringify(window.navigator)})
 }
 </script>
