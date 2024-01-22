@@ -1,9 +1,10 @@
 <script setup>
-const platform = {
-  MacIntel: 'x64.dmg',
-  Win32: 'Setup.exe',
-  'Linux x86_64': '_amd64.deb',
-  'Linux armv81': '_arm64.deb'
+const platforms = {
+  'macos_x86': 'x64.dmg',
+  'macos_arm': 'arm64.dmg',
+  'windows_x86': 'Setup.exe',
+  'linux_x86': '_amd64.deb',
+  'linux_arm': '_arm64.deb'
 };
 const getLatestLinks = async () => {
   const data = await fetch('https://api.github.com/repos/geek-fun/dockit/releases/latest')
@@ -16,11 +17,18 @@ const getLatestLinks = async () => {
 }
 
 const downloadFn = async (event) => {
-  // const links = await getLatestLinks();
-  // const link = links.find((item) => item.name.includes(platform[window.navigator.platform]));
-  // console.log('downloadFn', fetch(link.url))
-  console.log('downloadFn',await navigator.userAgentData.getHighEntropyValues(['architecture']))
-  console.log('downloadFnJson',{ nv: JSON.stringify(window.navigator)})
+  const {architecture, platform} = await navigator.userAgentData.getHighEntropyValues(['architecture']);
+  const links = await getLatestLinks();
+  const link = links.find((item) => item.name.endsWith(platforms[`${platform}_${architecture}`.toLowerCase()]));
+  if (link) {
+    window.open(link.url, '_blank').focus();
+  }else {
+    console.error('downloadFn', 'no link found')
+  }
+  console.log('downloadFn', {
+    links,
+    entropyValues:{architecture, platform}
+  })
 }
 </script>
 <template>
