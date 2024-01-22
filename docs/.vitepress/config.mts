@@ -26,9 +26,7 @@ export default defineConfig({
       {
         text: 'Download',
         items: [
-          {text: 'mac', link: '/markdown-examples'},
-          {text: 'linux', link: '/api-examples'},
-          {text: 'windows', link: '/api-examples'}
+          {text: 'Download', link: '/download'},
         ]
       }
     ],
