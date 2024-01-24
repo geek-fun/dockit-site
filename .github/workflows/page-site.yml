@@ -22,20 +22,19 @@ jobs:
       - run: npm ci
       - run: npm run docs:build
       - name: Create Tag
-        uses: jaywcjlove/create-tag-action@main
+        uses: jaywcjlove/create-tag-action@v1.3.20
         if: ${{ github.ref == 'refs/heads/master' }}
         id: create_tag
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
-        uses: jaywcjlove/create-tag-action@main
+        uses: jaywcjlove/create-tag-action@v1.3.20
         if: steps.create_tag.outputs.successful
         id: tag_release
         with:
           release: true
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.create_tag.outputs.version }}
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
