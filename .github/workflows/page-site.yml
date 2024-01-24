@@ -18,7 +18,7 @@ jobs:
       - run: npm ci
       - run: npm run docs:build
       - name: Check if version has been updated
-        if: github.ref == 'refs/heads/master'
+        if: ${{ github.ref == 'refs/heads/master' }}
         uses: EndBug/version-check@v2
         id: check
       - name: Create new tag against package.json version
