@@ -19,17 +19,14 @@ jobs:
       - run: npm run docs:build
       - name: Check if version has been updated
         if: ${{ github.ref == 'refs/heads/master' }}
-        uses: EndBug/version-check@v2
-        id: check
-      - name: Create new tag against package.json version
-        uses: neverendingqs/gh-action-tag-on-npm-version@master
-        if: steps.check.outputs.changed == 'true'
-      - name: Build Release
-        uses: "marvinpinto/action-automatic-releases@latest"
-        if: steps.check.outputs.changed == 'true'
+        run: echo "previous_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo '')" >> $GITHUB_ENV
+      - name: Build Release (tag, release)
+        id: create_tag
+        uses: jaywcjlove/create-tag-action@main
+        if: env.previous_tag
         with:
-          prerelease: false
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          release: true
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         if: steps.check.outputs.has_changed == 'true'
