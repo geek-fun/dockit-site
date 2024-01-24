@@ -23,16 +23,9 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run docs:build
-      - name: Create Tag
+      - name: Build Release
         uses: jaywcjlove/create-tag-action@main
         if: ${{ github.ref == 'refs/heads/master' }}
-        id: create_tag
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create Release
-        uses: jaywcjlove/create-tag-action@main
-        if: steps.create_tag.outputs.successful
         id: tag_release
         with:
           release: true
