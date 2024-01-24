@@ -23,10 +23,10 @@ jobs:
         id: check
       - name: Create new tag against package.json version
         uses: neverendingqs/gh-action-tag-on-npm-version@master
-        if: steps.check.outputs.has_changed == 'true'
+        if: steps.check.outputs.changed == 'true'
       - name: Build Release
         uses: "marvinpinto/action-automatic-releases@latest"
-        if: steps.check.outputs.has_changed == 'true'
+        if: steps.check.outputs.changed == 'true'
         with:
           prerelease: false
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
