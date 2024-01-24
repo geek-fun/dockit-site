@@ -5,31 +5,33 @@ on:
   pull_request:
     branches:  [master]
 
-permissions:
-  checks: write
-  contents: write
-
 jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      checks: write
+      contents: write
       deployments: write
     name: Publish to Cloudflare Pages
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm'
       - run: npm ci
       - run: npm run docs:build
       - name: Create Tag
-        uses: jaywcjlove/create-tag-action@v1.3.20
+        uses: jaywcjlove/create-tag-action@main
         if: ${{ github.ref == 'refs/heads/master' }}
         id: create_tag
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
-        uses: jaywcjlove/create-tag-action@v1.3.20
+        uses: jaywcjlove/create-tag-action@main
         if: steps.create_tag.outputs.successful
         id: tag_release
         with:
