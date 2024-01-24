@@ -5,6 +5,10 @@ on:
   pull_request:
     branches:  [master]
 
+permissions:
+  checks: write
+  contents: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -17,13 +21,21 @@ jobs:
         uses: actions/checkout@v4
       - run: npm ci
       - run: npm run docs:build
-      - name: Build Release (tag, release)
+      - name: Create Tag
         uses: jaywcjlove/create-tag-action@main
         if: ${{ github.ref == 'refs/heads/master' }}
+        id: create_tag
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release
+        uses: jaywcjlove/create-tag-action@main
+        if: steps.create_tag.outputs.successful
         id: tag_release
         with:
           release: true
           token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         if: steps.tag_release.outputs.successful
