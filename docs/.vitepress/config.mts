@@ -5,7 +5,7 @@ const description = "DocKit is an open-source Elasticsearch gui client, OpenSear
 const href = "/favicon.ico";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title,
+  title: "DocKit",
   description,
   outDir: '../dist',
   cacheDir: '../cache',
