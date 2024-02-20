@@ -7,7 +7,7 @@ hero:
   text: A better NoSQL/NewSQL GUI client
   tagline: Explore your data any time from your laptop
   image:
-    src: /public/dockit.png
+    src: dockit.png
     alt: DocKit logo
   actions:
     - theme: brand
