@@ -50,6 +50,10 @@ export default defineConfig({
 
     socialLinks: [
       {icon: 'github', link: 'https://github.com/geek-fun/dockit'}
-    ]
+    ],
+    footer: {
+  message: 'Dockit is an open-source Elasticsearch gui client, OpenSearch gui client for Mac, windows and Linux',
+      copyright: 'Copyright © 2023-present <a href="https://github.com/geek-fun">geek-fun</a>'
+    }
   }
 })

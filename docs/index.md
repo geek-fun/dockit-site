@@ -6,6 +6,9 @@ hero:
   name: "DocKit"
   text: A better NoSQL/NewSQL GUI client
   tagline: Explore your data any time from your laptop
+  image:
+    src: /public/dockit.png
+    alt: DocKit logo
   actions:
     - theme: brand
       text: Download
@@ -25,3 +28,7 @@ features:
     details: Support Elasticsearch, OpenSearch, and more to come
 ---
 
+<div align="center" style="padding: 64px;">
+<p style="font-size: 20px;margin: 20px;font-weight: bolder;">Client Screen Short</p>
+<img src="/public/client-ui.png" alt="Client UI" style="width: 90%"/>
+</div>
