@@ -2,7 +2,8 @@
 const platforms = {
   'macos_x86': 'x64.dmg',
   'macos_arm': 'arm64.dmg',
-  'windows_x86': 'Setup.exe',
+  'windows_x86': '.exe',
+  'windows_arm': 'Setup.exe',
   'linux_x86': '_amd64.deb',
   'linux_arm': '_arm64.deb'
 };
