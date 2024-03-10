@@ -1,7 +1,7 @@
 <script setup>
 const platforms = {
-  'macos_x86': 'x64.dmg',
-  'macos_arm': 'arm64.dmg',
+  'macos_x86': 'universal.dmg',
+  'macos_arm': 'universal.dmg',
   'windows_x86': 'x64.Setup.exe',
   'windows_arm': 'arm64.Setup.exe',
   'linux_x86': '_amd64.deb',
