@@ -22,7 +22,8 @@ export default defineConfig({
     // ['meta', {name: 'twitter:site', content: '@twitterhandle'}],
     ['meta', {name: 'twitter:title', content: title}],
     ['meta', {name: 'twitter:description', content: description}],
-    ['meta', {name: 'twitter:image', content: href}]
+    ['meta', {name: 'twitter:image', content: href}],
+    ['meta', {name: 'google-site-verification', content: 'cGT6p1dMryzZJSDbCVk_u-BNKMMF75Y61nOqyaKSK5A'}],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
