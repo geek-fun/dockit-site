@@ -1,7 +1,7 @@
 import {defineConfig} from 'vitepress'
 
 const title = "DocKit - Elasticsearch/OpenSearch gui Client";
-const description = "DocKit is an open-source Elasticsearch gui client, OpenSearch gui client for Mac, windows and Linux";
+const description = "DocKit is an open-source Elasticsearch gui client, OpenSearch gui client for Mac, windows and Linux, 开源 Elasticsearch OpenSearch 桌面客户端";
 const href = "/favicon.ico";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -24,6 +24,7 @@ export default defineConfig({
     ['meta', {name: 'twitter:description', content: description}],
     ['meta', {name: 'twitter:image', content: href}],
     ['meta', {name: 'google-site-verification', content: 'cGT6p1dMryzZJSDbCVk_u-BNKMMF75Y61nOqyaKSK5A'}],
+    ['meta', {name: 'msvalidate.01', content: '56AE1305771756AAB07967736F936525'}],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
