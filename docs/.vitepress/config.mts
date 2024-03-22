@@ -57,5 +57,8 @@ export default defineConfig({
   message: 'Dockit is an open-source desktop GUI client for Elasticsearch and OpenSearch across Mac, windows and Linux',
       copyright: 'Copyright © 2023-present <a href="https://github.com/geek-fun">geek-fun</a>'
     }
+  },
+  sitemap: {
+    hostname: 'https://dockit.geekfun.club'
   }
 })
