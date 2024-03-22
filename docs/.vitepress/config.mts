@@ -1,11 +1,11 @@
 import {defineConfig} from 'vitepress'
 
-const title = "DocKit - Elasticsearch/OpenSearch gui Client";
+const title = "DocKit - GUI Client for Elasticsearch/OpenSearch ";
 const description = "DocKit is an open-source Elasticsearch gui client, OpenSearch gui client for Mac, windows and Linux, 开源 Elasticsearch OpenSearch 桌面客户端";
 const href = "/favicon.ico";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "DocKit",
+  title,
   description,
   outDir: '../dist',
   cacheDir: '../cache',
@@ -54,7 +54,7 @@ export default defineConfig({
       {icon: 'github', link: 'https://github.com/geek-fun/dockit'}
     ],
     footer: {
-  message: 'Dockit is an open-source Elasticsearch gui client, OpenSearch gui client for Mac, windows and Linux',
+  message: 'Dockit is an open-source desktop GUI client for Elasticsearch and OpenSearch across Mac, windows and Linux',
       copyright: 'Copyright © 2023-present <a href="https://github.com/geek-fun">geek-fun</a>'
     }
   }
