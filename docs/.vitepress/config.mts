@@ -1,11 +1,11 @@
 import {defineConfig} from 'vitepress'
 
-const title = "DocKit - GUI Client for Elasticsearch/OpenSearch ";
+const title = "DocKit - GUI Client for Elasticsearch/OpenSearch";
 const description = "DocKit is an open-source Elasticsearch gui client, OpenSearch gui client for Mac, windows and Linux, 开源 Elasticsearch OpenSearch 桌面客户端";
 const href = "/favicon.ico";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title,
+  title: 'DocKit',
   description,
   outDir: '../dist',
   cacheDir: '../cache',
