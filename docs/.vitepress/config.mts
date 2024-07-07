@@ -51,7 +51,9 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      {icon: 'github', link: 'https://github.com/geek-fun/dockit'}
+      {icon: 'github', link: 'https://github.com/geek-fun/dockit'},
+      // add x social links
+      {icon: 'twitter', link: 'https://x.com/Blankll31075'},
     ],
     footer: {
   message: 'Dockit is an open-source desktop GUI client for Elasticsearch and OpenSearch across Mac, windows and Linux',
