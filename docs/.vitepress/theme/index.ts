@@ -1,7 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import {inBrowser, useData} from "vitepress";
 import {watchEffect} from "vue";
-import './custom.css'
+import './style.scss'
 import Download from "./components/download.vue";
 
 export default {
