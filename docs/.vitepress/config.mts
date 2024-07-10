@@ -39,7 +39,9 @@ export default defineConfig({
       {
         text: 'Docs',
         items: [
-          {text: 'document', link: '/docs'},
+          {text: 'Installation', link: '/docs/installation'},
+          {text: 'Connect to Server', link: '/docs/connect-to-server'},
+          {text: 'Shortcuts', link: '/docs/shortcut'},
         ]
       },
       {
