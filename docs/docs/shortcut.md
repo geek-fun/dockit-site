@@ -1,6 +1,6 @@
 # DocKit Shortcuts Introduction
 As a Desktop Application, DocKit provides a set of shortcuts to help users use DocKit more efficiently. This document outlines the available shortcuts and corresponding actions.
-
+These shortcuts are designed to streamline your workflow and enhance your productivity when working with DocKit to manage your Elasticsearch/OpenSearch server.
 ##  Shortcuts
 | Feature         | Shortcut                | Description                                                              | State              |
 |-----------------|-------------------------|--------------------------------------------------------------------------|--------------------|

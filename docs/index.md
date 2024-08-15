@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "DocKit"
   text: A better NoSQL/NewSQL GUI client
-  tagline: Explore your data any time from your laptop
+  tagline: Manage your ElasticSearch/OpenSearch servers with ease, support platforms across Windows, macOS, and Linux
   image:
     src: dockit.png
     alt: DocKit logo
@@ -21,9 +21,9 @@ features:
   - title: Full featured editor
     details: Powered by monaco-editor the backbones of vscode, provide familiar editor environment for developers
   - title: Keep your connections
-    details: Keep your connections in desktop apps, move the dependencies of dashboard tools
+    details: Keep your Elasticsearch server connections in DocKit move the dependencies of dashboard tools
   - title: File persistence
-    details: Save your code in your machine as file, never lost
+    details: Save your ElasticSearch Query in your machine as file, never lost
   - title: Multi engines support
     details: Support Elasticsearch, OpenSearch, and more to come
 ---

@@ -1,18 +1,18 @@
 import {defineConfig} from 'vitepress'
 
-const title = "DocKit - GUI Client for Elasticsearch/OpenSearch";
-const description = "DocKit is an open-source Elasticsearch gui client, OpenSearch gui client for Mac, windows and Linux, 开源 Elasticsearch OpenSearch 桌面客户端";
+const title = "DocKit - Elasticsearch Desktop Client";
+const description = "DocKit is an open-source Elasticsearch gui client, OpenSearch gui client for Mac, windows and Linux";
 const href = "/favicon.ico";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'DocKit',
+  title,
   description,
   outDir: '../dist',
   cacheDir: '../cache',
   head: [
     ['link', {rel: 'icon', href}],
     ['meta', {name: 'description', content: description}],
-    ['meta', {name: 'keywords', content: 'elasticsearch, gui, client, opensearch, dockit, mac, windows, linux'}],
+    ['meta', {name: 'keywords', content: 'elasticsearch, gui, client, opensearch, dockit, database, NoSQL, Kibana, mac, windows, linux'}],
     ['meta', {property: 'og:title', content: title}],
     ['meta', {property: 'og:description', content: description}],
     ['meta', {property: 'og:image', content: href}],
@@ -32,6 +32,7 @@ export default defineConfig({
     nav: [
       {text: 'Home', link: '/'},
       {text: 'Docs', link: '/docs'},
+      {text: 'Blog', link: '/blog'},
       {text: 'Download', link: '/download'}
     ],
 
@@ -58,7 +59,7 @@ export default defineConfig({
       {icon: 'twitter', link: 'https://x.com/Blankll31075'},
     ],
     footer: {
-  message: 'Dockit is an open-source desktop GUI client for Elasticsearch and OpenSearch across Mac, windows and Linux',
+      message: 'Dockit is an open-source desktop GUI client for Elasticsearch and OpenSearch across Mac, windows and Linux',
       copyright: 'Copyright © 2023-present <a href="https://github.com/geek-fun">geek-fun</a>'
     }
   },

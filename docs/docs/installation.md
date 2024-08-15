@@ -1,6 +1,6 @@
 # DocKit Installation
 Thanks for trying out DocKit!:rocket::rocket::rocket: This guide will help you get started with DocKit.
-
+Before use DocKit to connect to your Elasticsearch server, you need to install it first.
 ## Download DocKit
 you can download the latest version of DocKit from the [Download](../download.md) page, then select the target platform to download the corresponding installation package.
 DocKit recently supports Windows, macOS, and Linux.
