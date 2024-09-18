@@ -26,6 +26,7 @@ export default defineConfig({
     ['meta', {name: 'twitter:image', content: href}],
     ['meta', {name: 'google-site-verification', content: 'cGT6p1dMryzZJSDbCVk_u-BNKMMF75Y61nOqyaKSK5A'}],
     ['meta', {name: 'msvalidate.01', content: '56AE1305771756AAB07967736F936525'}],
+    ['meta', {name: 'baidu-site-verification', content: 'codeva-xcKIdIQgET'}],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
