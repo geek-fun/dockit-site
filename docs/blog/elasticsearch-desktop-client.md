@@ -1,3 +1,9 @@
+---
+title: Introduction to Elasticsearch Desktop Client - DocKit
+keywords: Elasticsearch GUI client, Elasticsearch desktop client, Elasticsearch GUI tool, Elasticsearch desktop tool, Elasticsearch GUI, Elasticsearch desktop, Elasticsearch client, Elasticsearch tool, Elasticsearch management tool, Elasticsearch management client, Elasticsearch management, Elasticsearch data management, Elasticsearch data analysis, Elasticsearch data visualization,Elasticsearch data query, Elasticsearch data exploration, Elasticsearch data optimization, Elasticsearch data efficiency, Elasticsearch data workflow
+description: Are you searching for the best Elasticsearch GUI client to streamline your development data management? Look no further! In this comprehensive guide, we will introduce you to DocKit, a top-tier Elasticsearch GUI client designed to enhance your workflow and boost productivity. Whether you're a seasoned developer or just starting out, finding the right tool can make all the difference.
+---
+
 # Introduction to Elasticsearch Desktop Client - DocKit
 
 Are you searching for the best Elasticsearch desktop client to streamline your development data management? Look no further! In this comprehensive guide, we will introduce you to DocKit, a top-tier Elasticsearch desktop client designed to enhance your workflow and boost productivity. Whether you're a seasoned developer or just starting out, finding the right tool can make all the difference.
@@ -10,7 +16,7 @@ DocKit is a desktop client, compared to the web-based [Kibana](https://www.elast
 
 DocKit also support [OpenSearch](https://opensearch.org/), which provide seamless features and user experience for OpenSearch users, so developer don't need to switch between Kibana and [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/), they can use DocKit to manage both Elasticsearch and OpenSearch clusters.
 
-![DocKit UI](/public/client-ui.png)
+![DocKit UI](/client-ui.png)
 ## Key Features of DocKit
 
 DocKit offers a range of features to suit your specific needs:

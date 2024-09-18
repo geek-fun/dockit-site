@@ -1,7 +1,7 @@
 import {defineConfig} from 'vitepress'
 
-const title = "DocKit - Elasticsearch Desktop Client";
-const description = "DocKit is an open-source Elasticsearch gui client, OpenSearch gui client for Mac, windows and Linux";
+const title = "DocKit - Elasticsearch GUI Client";
+const description = "DocKit is an open-source Elasticsearch GUI client and OpenSearch GUI client for Mac, Windows, and Linux. Manage and analyze your Elasticsearch and OpenSearch data with ease using DocKit's user-friendly interface, advanced search capabilities, and cross-platform support.";
 const href = "/favicon.ico";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,14 +12,15 @@ export default defineConfig({
   head: [
     ['link', {rel: 'icon', href}],
     ['meta', {name: 'description', content: description}],
-    ['meta', {name: 'keywords', content: 'elasticsearch, gui, client, opensearch, dockit, database, NoSQL, Kibana, mac, windows, linux'}],
-    ['meta', {property: 'og:title', content: title}],
+    ['meta', {
+      name: 'keywords',
+      content: 'Elasticsearch GUI client, Elasticsearch desktop client, Elasticsearch management tool, OpenSearch GUI client, OpenSearch desktop client, DocKit, Elasticsearch data visualization, Elasticsearch data analysis, Elasticsearch data management, Elasticsearch query tool, Elasticsearch cross-platform client, Elasticsearch open-source client, Elasticsearch Mac client, Elasticsearch Windows client, Elasticsearch Linux client, Elasticsearch AI-powered search, Elasticsearch multiple server support'
+    }], ['meta', {property: 'og:title', content: title}],
     ['meta', {property: 'og:description', content: description}],
     ['meta', {property: 'og:image', content: href}],
-    ['meta', {property: 'og:url', content: 'URL of the page'}],
-    ['meta', {property: 'og:site_name', content: 'Name of the site'}],
+    ['meta', {property: 'og:url', content: '/'}],
+    ['meta', {property: 'og:site_name', content: title}],
     ['meta', {name: 'twitter:card', content: href}],
-    // ['meta', {name: 'twitter:site', content: '@twitterhandle'}],
     ['meta', {name: 'twitter:title', content: title}],
     ['meta', {name: 'twitter:description', content: description}],
     ['meta', {name: 'twitter:image', content: href}],
@@ -29,6 +30,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/favicon.ico',
+    siteTitle: 'DocKit',
     nav: [
       {text: 'Home', link: '/'},
       {text: 'Docs', link: '/docs'},
@@ -57,6 +59,7 @@ export default defineConfig({
       {icon: 'github', link: 'https://github.com/geek-fun/dockit'},
       // add x social links
       {icon: 'twitter', link: 'https://x.com/Blankll31075'},
+      {icon: 'youtube', link: 'https://www.youtube.com/@geekfun-club'}
     ],
     footer: {
       message: 'Dockit is an open-source desktop GUI client for Elasticsearch and OpenSearch across Mac, windows and Linux',

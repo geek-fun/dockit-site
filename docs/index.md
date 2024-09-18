@@ -30,5 +30,5 @@ features:
 
 <div align="center" style="padding: 64px;">
 <p style="font-size: 20px;margin: 20px;font-weight: bolder;">Client Screen Short</p>
-<img src="/public/client-ui.png" alt="Client UI" style="width: 90%"/>
+<img src="/client-ui.png" alt="Client UI" style="width: 90%"/>
 </div>

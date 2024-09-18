@@ -1,3 +1,8 @@
+---
+title: DocKit Installation
+keywords: DocKit installation, DocKit download, DocKit install, DocKit setup
+description: Thanks for trying out DocKit! This guide will help you get started with DocKit.
+---
 # DocKit Installation
 Thanks for trying out DocKit!:rocket::rocket::rocket: This guide will help you get started with DocKit.
 Before use DocKit to connect to your Elasticsearch server, you need to install it first.

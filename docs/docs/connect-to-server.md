@@ -1,4 +1,10 @@
-# DocKit connect to Elasticsearch server
+---
+title: Use DocKit GUI connect to Elasticsearch server
+keywords: DocKit, Elasticsearch GUI client, connect Elasticsearch server, Elasticsearch connection guide, Elasticsearch management tool, Elasticsearch desktop client, Elasticsearch data management, Elasticsearch data analysis, Elasticsearch data visualization, Elasticsearch query tool, Elasticsearch cross-platform client, Elasticsearch open-source client, Elasticsearch Mac client, Elasticsearch Windows client, Elasticsearch Linux client, Elasticsearch AI-powered search, Elasticsearch multiple server support
+description: DocKit as a NoSQL GUI client, it supports multiple databases, including Elasticsearch, OpenSearch, and more to come. This document outlines how to connect to a database server using DocKit.
+---
+
+# Use DocKit GUI connect to Elasticsearch server
 DocKit as a NoSQL GUI client, it supports multiple databases, including [Elasticsearch](https://www.elastic.co), OpenSearch, and more to come. This document outlines how to connect to a database server using DocKit.
 ## Install and Open DocKit
 you can find detailed instructions on how to install and open DocKit in the [installation guide](../docs/installation.md).
