@@ -46,6 +46,7 @@ export default defineConfig({
           {text: 'Installation', link: '/docs/installation'},
           {text: 'Connect to Server', link: '/docs/connect-to-server'},
           {text: 'Shortcuts', link: '/docs/shortcut'},
+          {text: 'Manage and Monitor Cluster', link: '/docs/manage-elasticsearch-cluster'},
         ]
       },
       {
