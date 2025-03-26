@@ -20,7 +20,7 @@ hero:
 features:
   - title: Full featured editor
     details: Powered by monaco-editor the backbones of vscode, provide familiar editor environment for developers
-  - title: Keep your connections
+  - title: Persists your connections
     details: Keep your Elasticsearch server connections in DocKit move the dependencies of dashboard tools
   - title: File persistence
     details: Save your ElasticSearch Query in your machine as file, never lost
