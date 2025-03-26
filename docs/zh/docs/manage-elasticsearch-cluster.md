@@ -13,11 +13,11 @@ DocKit 作为一个 NoSQL GUI 客户端，支持监控和管理 Elasticsearch，
 
 ## 安装并打开 DocKit
 
-您可以在[安装指南](../docs/installation.md)中找到有关如何安装和打开 DocKit 的详细说明。
+您可以在[安装指南](./installation.md)中找到有关如何安装和打开 DocKit 的详细说明。
 
 ## 连接到 Elasticsearch 服务器
 
-您可以在[连接指南](../docs/connect-to-server.md)中找到有关如何连接到 Elasticsearch 服务器的详细说明。
+您可以在[连接指南](./connect-to-server.md)中找到有关如何连接到 Elasticsearch 服务器的详细说明。
 
 ## 监控和管理 Elasticsearch 集群
 
