@@ -37,14 +37,16 @@ Elasticsearch and OpenSearch clusters.
 
 DocKit offers a range of features to suit your specific needs:
 
-- **User-Friendly Interface**: Navigate through your Elasticsearch/OpenSearch server with ease using DocKit's intuitive
-  interface.
+- **User-Friendly Interface**: Navigate through your Elasticsearch/OpenSearch server with ease using DocKit's intuitive interface.
 - **Advanced Search Capabilities**: Perform complex searches and analyze your data efficiently.
 - **Cross-Platform Support**: Available for Mac, Windows, and Linux, ensuring compatibility with your operating system.
 - **Open-Source**: DocKit is an open-source project, allowing for community contributions and continuous improvement.
-- **Multiple Server Support**: Connect to multiple Elasticsearch/OpenSearch servers simultaneously, streamlining your
-  workflow.
+- **Multiple Server Support**: Connect to multiple Elasticsearch/OpenSearch servers simultaneously, streamlining your workflow.
 - **AI-Powered Search**: Utilize AI-powered search capabilities to enhance your data analysis and visualization.
+- **Dark Mode Support**: DocKit offers a dark mode to protect your eyes and improve productivity.
+- **Multi-Window Support**: DocKit supports multi-window operations, allowing you to view and edit multiple indices and documents simultaneously.
+- **Multi-Language Support**: DocKit provides multiple language versions, ensuring ease of use for users worldwide.
+- **Cluster Management and Monitoring**: DocKit offers cluster management and monitoring features, helping you easily manage and monitor the health, nodes, shards, and indices of your Elasticsearch clusters.
 
 ## How to Get Started with DocKit
 

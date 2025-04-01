@@ -20,12 +20,12 @@ hero:
 features:
   - title: 全功能编辑器
     details: DocKit的编辑器由 monaco-editor(vscode的编辑基础模块) 构建而来，提供了与vscode一致的编辑体验，为开发者提供熟悉的编辑环境
-  - title: 持久化您的连接
-    details: 在 DocKit 中保持您的 ElasticSearch/OpenSearch 服务器连，移除对仪表板工具如Kibana等的依赖
-  - title: 查询DSL持久化
-    details: 将您的 ElasticSearch/OpenSearch 查询保存为文件，永不丢失
+  - title: 连接、查询DSL持久化
+    details: DocKit可以同时连接多个 ElasticSearch/OpenSearch 集群，并且可以将查询DSL持久化到本地文件中，避免数据丢失。
   - title: 多引存储擎支持
     details: 支持 Elasticsearch、OpenSearch，更多引擎即将支持
+  - title: 可视化管理监控
+    details: DocKit 提供集群管理和监控功能，帮助您轻松管理和监控 Elasticsearch 集群的健康状况、节点、分片和索引等信息。
 ---
 
 <div align="center" style="padding: 64px;">

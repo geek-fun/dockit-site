@@ -19,13 +19,14 @@ hero:
 
 features:
   - title: Full featured editor
-    details: Powered by monaco-editor the backbones of vscode, provide familiar editor environment for developers
-  - title: Persists your connections
-    details: Keep your Elasticsearch server connections in DocKit move the dependencies of dashboard tools
-  - title: File persistence
-    details: Save your ElasticSearch Query in your machine as file, never lost
-  - title: Multi engines support
-    details: Support Elasticsearch, OpenSearch, and more to come
+    details: Powered by monaco-editor (the backbone of vscode), providing a familiar editing environment for developers.
+  - title: Persist connections and query DSL
+    details: DocKit can connect to multiple Elasticsearch/OpenSearch clusters simultaneously and persist query DSL to local files, preventing data loss.
+  - title: Multi-engine support
+    details: Supports Elasticsearch, OpenSearch, and more engines coming soon.
+  - title: Cluster management and monitoring
+    details: DocKit provides cluster management and monitoring features, helping you easily manage and monitor the health, nodes, shards, and indices of your Elasticsearch clusters.
+
 ---
 
 <div align="center" style="padding: 64px;">
