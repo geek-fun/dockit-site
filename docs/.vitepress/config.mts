@@ -1,9 +1,9 @@
 import {defineConfig} from 'vitepress'
 
-const title = "DocKit - Elasticsearch GUI Client";
-const titleZh = "DocKit - Elasticsearch 图形化客户端";
-const desc = "DocKit is an open-source Elasticsearch GUI client and OpenSearch GUI client for Mac, Windows, and Linux. Manage and analyze your Elasticsearch and OpenSearch data with ease using DocKit's user-friendly interface, advanced search capabilities, and cross-platform support.";
-const descZh = "DocKit 是一款开源的 Elasticsearch 图形化客户端和 OpenSearch 图形化客户端，支持 Mac、Windows 和 Linux。使用 DocKit 的用户友好界面、高级搜索功能和跨平台支持，轻松管理和分析您的 Elasticsearch 和 OpenSearch 数据。";
+const title = "DocKit - AI Native NoSQL GUI Client";
+const titleZh = "DocKit - AI 原生 NoSQL GUI 客户端";
+const desc = "DocKit is an AI-native, open-source NoSQL GUI client for Elasticsearch, OpenSearch, and DynamoDB. Built-in AI assistant helps you write queries, analyze data, and troubleshoot issues. Available for Mac, Windows, and Linux with intelligent database management.";
+const descZh = "DocKit 是一款 AI 原生的开源 NoSQL 图形化客户端，支持 Elasticsearch、OpenSearch 和 DynamoDB。内置 AI 助手帮助您编写查询、分析数据和解决问题。适用于 Mac、Windows 和 Linux，提供智能化数据库管理。";
 const href = "/favicon.ico";
 
 const sharedThemeConfig = {
@@ -35,7 +35,7 @@ export default defineConfig({
         ['meta', {name: 'description', content: desc}],
         ['meta', {
           name: 'keywords',
-          content: 'Elasticsearch GUI client, Elasticsearch desktop client, Elasticsearch management tool, OpenSearch GUI client, OpenSearch desktop client, DocKit, Elasticsearch data visualization, Elasticsearch data analysis, Elasticsearch data management, Elasticsearch query tool, Elasticsearch cross-platform client, Elasticsearch open-source client, Elasticsearch Mac client, Elasticsearch Windows client, Elasticsearch Linux client, Elasticsearch AI-powered search, Elasticsearch multiple server support'
+          content: 'DocKit, AI Native database client, AI-powered database management, NoSQL GUI client, Elasticsearch GUI client, OpenSearch GUI client, DynamoDB GUI client, AI database assistant, LLM database tool, intelligent query builder, AI query optimization, Elasticsearch desktop client, OpenSearch desktop client, DynamoDB desktop client, Elasticsearch management tool, DynamoDB management tool, PartiQL editor, Elasticsearch data visualization, DynamoDB data visualization, NoSQL database management, cross-platform client, open-source database client, Mac database client, Windows database client, Linux database client, multi-database support'
         }], ['meta', {property: 'og:title', content: title}],
         ['meta', {property: 'og:description', content: desc}],
         ['meta', {property: 'og:image', content: href}],
@@ -54,7 +54,6 @@ export default defineConfig({
         nav: [
           {text: 'Home', link: '/'},
           {text: 'Docs', link: '/docs'},
-          {text: 'Blog', link: '/blog'},
           {text: 'Download', link: '/download'}
         ],
         sidebar: [
@@ -73,11 +72,7 @@ export default defineConfig({
               {text: 'Download', link: '/download'},
             ]
           }
-        ],
-        footer: {
-          message: 'Dockit is an open-source desktop GUI client for Elasticsearch and OpenSearch across Mac, windows and Linux',
-          copyright: 'Copyright © 2023-present <a href="https://github.com/geek-fun">geek-fun</a>'
-        }
+        ]
       }
     },
     zh: {
@@ -90,7 +85,7 @@ export default defineConfig({
         ['meta', {name: 'description', content: descZh}],
         ['meta', {
           name: 'keywords',
-          content: 'Elasticsearch 图形化客户端, Elasticsearch 桌面客户端, Elasticsearch 管理工具, OpenSearch 图形化客户端, OpenSearch 桌面客户端, DocKit, Elasticsearch 数据可视化, Elasticsearch 数据分析, Elasticsearch 数据管理, Elasticsearch 查询工具, Elasticsearch 跨平台客户端, Elasticsearch 开源客户端, Elasticsearch Mac 客户端, Elasticsearch Windows 客户端, Elasticsearch Linux 客户端, Elasticsearch AI 驱动搜索, Elasticsearch 多服务器支持'
+          content: 'DocKit, AI 原生数据库客户端, AI 驱动数据库管理, NoSQL 图形化客户端, Elasticsearch 图形化客户端, OpenSearch 图形化客户端, DynamoDB 图形化客户端, AI 数据库助手, 大语言模型数据库工具, 智能查询构建器, AI 查询优化, Elasticsearch 桌面客户端, OpenSearch 桌面客户端, DynamoDB 桌面客户端, Elasticsearch 管理工具, DynamoDB 管理工具, PartiQL 编辑器, Elasticsearch 数据可视化, DynamoDB 数据可视化, NoSQL 数据库管理, 跨平台客户端, 开源数据库客户端, Mac 数据库客户端, Windows 数据库客户端, Linux 数据库客户端, 多数据库支持'
         }],
         ['meta', {property: 'og:title', content: titleZh}],
         ['meta', {property: 'og:description', content: descZh}],
@@ -110,7 +105,6 @@ export default defineConfig({
         nav: [
           {text: '首页', link: '/zh'},
           {text: '文档', link: '/zh/docs'},
-          {text: '博客', link: '/zh/blog'},
           {text: '下载', link: '/zh/download'}
         ],
         sidebar: [
@@ -129,11 +123,7 @@ export default defineConfig({
               {text: '下载', link: '/zh/download'},
             ]
           }
-        ],
-        footer:  {
-          message: 'Dockit 是一款开源的 Elasticsearch 和 OpenSearch 图形化客户端，支持 Mac、Windows 和 Linux',
-          copyright: 'Copyright © 2023-present <a href="https://github.com/geek-fun">极客范</a>'
-        }
+        ]
       }
     },
   },

@@ -3,9 +3,11 @@ import {inBrowser, useData} from "vitepress";
 import {watchEffect} from "vue";
 import './style.scss'
 import Download from "./components/download.vue";
+import Layout from "./Layout.vue";
 
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
+  Layout,
   setup() {
     const {lang} = useData()
     watchEffect(() => {

@@ -1,6 +1,6 @@
 # 文档
 
-DocKit 作为一个 NoSQL/NewSQL GUI 客户端，支持 Elasticsearch、OpenSearch 以及更多即将支持的数据库。本文档概述了如何使用 DocKit。
+DocKit 作为一个 NoSQL/NewSQL GUI 客户端，支持 Elasticsearch、OpenSearch、DynamoDB 以及更多即将支持的数据库。本文档概述了如何使用 DocKit。
 
 ## [安装指南](/zh/docs/installation.md)
 
@@ -8,7 +8,7 @@ DocKit 作为一个 NoSQL/NewSQL GUI 客户端，支持 Elasticsearch、OpenSear
 
 ## [连接到服务器](/zh/docs/connect-to-server.md)
 
-DocKit 作为一个 NoSQL GUI 客户端，支持多种数据库，包括 Elasticsearch、OpenSearch 以及更多即将支持的数据库。本文档概述了如何使用 DocKit 连接到 Elasticsearch 服务器。
+DocKit 作为一个 NoSQL GUI 客户端，支持多种数据库，包括 Elasticsearch、OpenSearch、DynamoDB 以及更多即将支持的数据库。本文档概述了如何使用 DocKit 连接到数据库服务器。
 
 ## [快捷键介绍](/zh/docs/shortcut.md)
 

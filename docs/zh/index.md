@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "DocKit"
-  text: 一个开发者友好的 NoSQL/NewSQL GUI 客户端
-  tagline: 轻松管理您的 ElasticSearch/OpenSearch 服务器，支持 Windows、macOS 和 Linux 平台
+  text: AI 原生 NoSQL/NewSQL GUI 客户端
+  tagline: 基于 AI 助力的数据库管理工具，轻松管理您的 Elasticsearch、OpenSearch 和 DynamoDB 数据库，支持 Windows、macOS 和 Linux 平台
   image:
     src: dockit.png
     alt: DocKit logo
@@ -20,13 +20,17 @@ hero:
 features:
   - title: 全功能编辑器
     details: DocKit的编辑器由 monaco-editor(vscode的编辑基础模块) 构建而来，提供了与vscode一致的编辑体验，为开发者提供熟悉的编辑环境
-  - title: 连接、查询DSL持久化
-    details: DocKit可以同时连接多个 ElasticSearch/OpenSearch 集群，并且可以将查询DSL持久化到本地文件中，避免数据丢失。
-  - title: 多引存储擎支持
-    details: 支持 Elasticsearch、OpenSearch，更多引擎即将支持
+  - title: 连接、查询持久化
+    details: DocKit可以同时连接多个 Elasticsearch、OpenSearch 和 DynamoDB 实例，并且可以将查询持久化到本地文件中，避免数据丢失。
+  - title: 多引擎存储支持
+    details: 支持 Elasticsearch、OpenSearch、DynamoDB，更多引擎即将支持
   - title: 可视化管理监控
     details: DocKit 提供集群管理和监控功能，帮助您轻松管理和监控 Elasticsearch 集群的健康状况、节点、分片和索引等信息。
 ---
+
+::: tip 🎉 最新消息
+DocKit v0.8 已发布 - 现已全面支持 DynamoDB！[了解更多 →](/zh/download)
+:::
 
 <div align="center" style="padding: 64px;">
 <p style="font-size: 20px;margin: 20px;font-weight: bolder;">客户端截图</p>
