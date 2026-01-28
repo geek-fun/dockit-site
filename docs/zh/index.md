@@ -1,11 +1,13 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+title: DocKit - 开源 NoSQL GUI 客户端
+description: DocKit 是一款开源 NoSQL 图形化客户端，支持 DynamoDB、OpenSearch 和 Elasticsearch。适用于 Mac、Windows 和 Linux 的快速、安全的数据库管理工具。
 
 hero:
   name: "DocKit"
-  text: AI 原生 NoSQL/NewSQL GUI 客户端
-  tagline: 基于 AI 助力的数据库管理工具，轻松管理您的 Elasticsearch、OpenSearch 和 DynamoDB 数据库，支持 Windows、macOS 和 Linux 平台
+  text: 开源 NoSQL GUI 客户端
+  tagline: 快速、安全的桌面客户端，支持 DynamoDB、Elasticsearch 和 OpenSearch。AI 驱动的数据库管理工具，适用于 Windows、macOS 和 Linux
   image:
     src: dockit.png
     alt: DocKit logo

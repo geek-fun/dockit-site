@@ -6,6 +6,9 @@ head:
   - - meta
     - name: keywords
       content: DocKit, Elasticsearch GUI client, connect Elasticsearch server, Elasticsearch connection guide, Elasticsearch management tool, Elasticsearch desktop client, Elasticsearch data management, Elasticsearch data analysis, Elasticsearch data visualization, Elasticsearch query tool, Elasticsearch cross-platform client, Elasticsearch open-source client, Elasticsearch Mac client, Elasticsearch Windows client, Elasticsearch Linux client, Elasticsearch AI-powered search, Elasticsearch multiple server support
+  - - meta
+    - name: robots
+      content: noindex, follow
 ---
 
 # DocKit Monitor and Manage Elasticsearch Cluster
