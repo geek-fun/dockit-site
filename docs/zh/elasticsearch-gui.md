@@ -178,7 +178,7 @@ GET /products/_search
 从 [dockit.geekfun.club/download](/zh/download) 下载
 
 ### 2. 连接到 Elasticsearch
-- 本地实例（http://localhost:9200）
+- 本地实例（`http://localhost:9200`）
 - 远程集群（带身份验证）
 - Elastic Cloud（API 密钥或用户名/密码）
 

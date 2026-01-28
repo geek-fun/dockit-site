@@ -175,7 +175,7 @@ DocKit 与 AWS OpenSearch Service 完美配合：
 从 [dockit.geekfun.club/download](/zh/download) 下载
 
 ### 2. 连接到 OpenSearch
-- 本地 OpenSearch（http://localhost:9200）
+- 本地 OpenSearch（`http://localhost:9200`）
 - AWS OpenSearch Service
 - 自托管集群（带身份验证）
 
