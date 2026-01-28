@@ -1,6 +1,6 @@
 ---
 title: OpenSearch GUI 客户端 - 适用于 Mac、Windows、Linux 的免费桌面工具
-description: DocKit 是一个免费的开源 OpenSearch GUI 客户端，具有可视化查询构建器、Dev Tools 替代方案以及用于 Mac、Windows、Linux 的集群管理功能。
+description: DocKit 是一个免费的开源 OpenSearch GUI 和 OpenSearch Dashboards 替代方案。可视化查询构建器、Dev Tools 和集群管理，适用于 Mac、Windows 和 Linux。
 sidebar: false
 ---
 
@@ -8,27 +8,19 @@ sidebar: false
 
 DocKit 是一个**免费的开源 OpenSearch GUI 客户端**，专为需要快速、可靠的桌面替代方案的开发者和 DevOps 团队设计，替代 OpenSearch Dashboards 和基于浏览器的工具。
 
-## 为什么使用 OpenSearch 桌面客户端？
+## 为什么选择 DocKit for OpenSearch？
 
-OpenSearch Dashboards（Web UI）在许多任务中表现良好，但专用的桌面客户端提供了几个优势：
+DocKit 为 OpenSearch 开发带来桌面原生性能：
 
-### 🚀 性能优势
-- **更快的启动**：无浏览器开销或容器启动时间
-- **更低的内存使用**：原生应用 vs. 浏览器标签
-- **离线查询构建**：无需连接即可编写和测试查询
-- **更好的响应性**：直接 API 调用，无代理层
+### ⚡ 极速快捷
+- 在 2 秒内启动（Dashboards 需要 10-30 秒）
+- 使用 ~150 MB RAM vs 浏览器工具的 500 MB+
 
-### 💾 持久工作空间
-- **保存的查询**：自动在本地持久化所有查询
-- **查询历史**：关闭标签时永不丢失工作
-- **多个连接**：在开发/暂存/生产之间即时切换
-- **项目组织**：按项目文件夹组织查询
-
-### 🔒 安全与隐私
-- **本地执行**：所有查询直接从您的机器运行
-- **凭证管理**：连接配置的安全存储
-- **无云依赖**：完全离线工作
-- **审计控制**：完全了解工具的功能
+### 🛠️ 开发者体验
+- JSON5 语法 - 无需严格的 JSON 格式编写查询
+- 行内注释用于查询文档
+- 所有查询的本地文件存储（Git 友好）
+- 离线工作，随时同步
 
 ## DocKit OpenSearch 客户端的主要功能
 
@@ -189,23 +181,36 @@ GET /_cluster/health
 - 检查集群健康
 - 浏览索引和映射
 
+## OpenSearch 版本兼容性
+
+DocKit 旨在支持 **OpenSearch 1.x 版本及更高版本**，使用标准的 OpenSearch REST API。客户端不绑定到特定版本，应该能够无缝地在不同的 OpenSearch 版本中工作。
+
+**测试版本：**
+- OpenSearch 1.x - 3.x
+- AWS OpenSearch Service（所有版本）
+- 自托管 OpenSearch 集群
+
+如果您在使用 OpenSearch 版本时遇到任何兼容性问题，请[在 GitHub 上报告](https://github.com/geek-fun/dockit/issues) — 我们致力于维护广泛的版本支持。
+
 ## 常见问题
 
-### DocKit 支持哪些 OpenSearch 版本？
+### DocKit 是否支持 OpenSearch 3.x？
+是的！DocKit 完全支持 OpenSearch 3.x，包括最新的查询 DSL。
 
-DocKit 支持 OpenSearch 1.x 和 2.x。它自动检测您的版本并调整 API 调用。
+### DocKit 是 OpenSearch Dashboards 的替代品吗？
+对于**查询和索引管理**，是的。对于**可视化和仪表板**，不是。许多团队同时使用两者。
 
-### 我可以同时管理 OpenSearch 和 Elasticsearch 吗？
+### 我可以导出查询结果吗？
+DocKit 提供了一个全面的**导入/导出模块**，您可以在其中以多种格式导出数据和架构。这个专用模块提供了比简单结果导出更多的控制和选项 — 访问导入/导出部分按需导出数据。
 
-是的！DocKit 在同一应用程序中支持两者。在连接配置中创建单独的连接。
+### DocKit 对生产集群安全吗？
+是的。DocKit 使用官方 OpenSearch 客户端库，并尊重所有集群安全设置。为了安全起见，始终使用只读凭证。
 
-### DocKit 与 AWS OpenSearch Service 配合使用吗？
+### DocKit 也支持 Elasticsearch 吗？
+是的！DocKit 在同一应用程序中支持 **OpenSearch**、**Elasticsearch** 和 **DynamoDB**。您可以管理所有三种数据库类型而无需切换工具。
 
-是的。使用您的 AWS 端点、区域和 IAM 凭证或主用户名/密码。
-
-### 我的查询存储在哪里？
-
-查询作为纯文本 JSON 文件保存在您的机器本地。您可以选择目录并通过 Git 同步。
+### 连接凭证存储在哪里？
+凭证经过加密并存储在您的本地机器上。它们永远不会离开您的设备。
 
 ## 其他资源
 
