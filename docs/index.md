@@ -3,6 +3,25 @@
 layout: home
 title: DocKit – Open-Source NoSQL GUI Client
 description: DocKit is an open-source desktop GUI client for DynamoDB, OpenSearch, and Elasticsearch. A fast, secure Dynobase alternative for developers on Mac, Windows, and Linux.
+head:
+  - - meta
+    - name: keywords
+      content: NoSQL GUI client, DynamoDB GUI, Elasticsearch GUI, OpenSearch GUI, database client, Dynobase alternative, Kibana alternative, open source database tool, PartiQL editor, desktop database client, Mac database client, Windows database client, Linux database client
+  - - link
+    - rel: canonical
+      href: https://dockit.geekfun.club/
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://dockit.geekfun.club/
+  - - link
+    - rel: alternate
+      hreflang: zh
+      href: https://dockit.geekfun.club/zh/
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://dockit.geekfun.club/
 
 hero:
   name: "DocKit"
@@ -10,7 +29,7 @@ hero:
   tagline: Fast, secure desktop client for DynamoDB, Elasticsearch, and OpenSearch. AI-powered database management for Windows, macOS, and Linux
   image:
     src: dockit.png
-    alt: DocKit logo
+    alt: DocKit - Open-source NoSQL GUI client for DynamoDB, Elasticsearch, and OpenSearch
   actions:
     - theme: brand
       text: Download

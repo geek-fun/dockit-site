@@ -1,6 +1,25 @@
 ---
 title: Elasticsearch GUI Client - Free Desktop Tool for Mac, Windows, Linux
 description: DocKit is a free, open-source Elasticsearch GUI client with visual query builder, Dev Tools alternative, and cluster management for Mac, Windows, and Linux.
+head:
+  - - meta
+    - name: keywords
+      content: Elasticsearch GUI, Elasticsearch client, Elasticsearch desktop client, Kibana alternative, Elasticsearch Dev Tools, Elasticsearch query builder, Elasticsearch management tool, free Elasticsearch client, open source Elasticsearch, Elasticsearch data browser, Elasticsearch JSON5, Elasticsearch cluster management, Elasticsearch Mac client, Elasticsearch Windows client
+  - - link
+    - rel: canonical
+      href: https://dockit.geekfun.club/elasticsearch-gui
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://dockit.geekfun.club/elasticsearch-gui
+  - - link
+    - rel: alternate
+      hreflang: zh
+      href: https://dockit.geekfun.club/zh/elasticsearch-gui
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://dockit.geekfun.club/elasticsearch-gui
 sidebar: false
 ---
 

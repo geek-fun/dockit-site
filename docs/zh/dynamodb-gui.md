@@ -1,6 +1,25 @@
 ---
 title: DynamoDB GUI 客户端 - 开源桌面工具
 description: DocKit 是适用于 Mac、Windows 和 Linux 的免费开源 DynamoDB GUI 客户端。可视化查询构建器、PartiQL 编辑器和本地数据管理，无需 AWS 控制台。
+head:
+  - - meta
+    - name: keywords
+      content: DynamoDB GUI, DynamoDB 客户端, DynamoDB 桌面客户端, DynamoDB GUI 客户端, PartiQL 编辑器, DynamoDB 可视化查询构建器, DynamoDB 管理工具, AWS DynamoDB 客户端, 免费 DynamoDB 客户端, 开源 DynamoDB, DynamoDB 数据浏览器, DynamoDB 查询工具, DynamoDB 本地客户端, DynamoDB Mac 客户端, DynamoDB Windows 客户端
+  - - link
+    - rel: canonical
+      href: https://dockit.geekfun.club/zh/dynamodb-gui
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://dockit.geekfun.club/dynamodb-gui
+  - - link
+    - rel: alternate
+      hreflang: zh
+      href: https://dockit.geekfun.club/zh/dynamodb-gui
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://dockit.geekfun.club/dynamodb-gui
 sidebar: false
 ---
 

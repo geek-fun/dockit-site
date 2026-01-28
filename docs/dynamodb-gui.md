@@ -1,6 +1,25 @@
 ---
 title: DynamoDB GUI Client - Open Source Desktop Tool
 description: DocKit is a free, open-source DynamoDB GUI client for Mac, Windows, and Linux. Visual query builder, PartiQL editor, and local data management without AWS Console.
+head:
+  - - meta
+    - name: keywords
+      content: DynamoDB GUI, DynamoDB client, DynamoDB desktop client, DynamoDB GUI client, PartiQL editor, DynamoDB visual query builder, DynamoDB management tool, AWS DynamoDB client, free DynamoDB client, open source DynamoDB, DynamoDB data browser, DynamoDB query tool, DynamoDB local client, DynamoDB Mac client, DynamoDB Windows client
+  - - link
+    - rel: canonical
+      href: https://dockit.geekfun.club/dynamodb-gui
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://dockit.geekfun.club/dynamodb-gui
+  - - link
+    - rel: alternate
+      hreflang: zh
+      href: https://dockit.geekfun.club/zh/dynamodb-gui
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://dockit.geekfun.club/dynamodb-gui
 sidebar: false
 ---
 

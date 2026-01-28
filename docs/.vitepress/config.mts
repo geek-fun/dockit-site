@@ -35,7 +35,7 @@ export default defineConfig({
         ['meta', {name: 'description', content: desc}],
         ['meta', {
           name: 'keywords',
-          content: 'DynamoDB GUI client, Dynobase alternative, Elasticsearch GUI client, OpenSearch GUI client, DynamoDB desktop client, open-source database client, PartiQL editor, NoSQL GUI client, DynamoDB management tool, Elasticsearch desktop client, OpenSearch desktop client, free DynamoDB client, Mac database client, Windows database client, Linux database client, DynamoDB data visualization, Elasticsearch data visualization, cross-platform database tool, AI database assistant, multi-database support'
+          content: 'DynamoDB GUI, Elasticsearch GUI, OpenSearch GUI, DynamoDB client, Elasticsearch client, OpenSearch client, Dynobase alternative, Kibana alternative, DynamoDB desktop client, Elasticsearch desktop client, OpenSearch desktop client, PartiQL editor, NoSQL GUI client, DynamoDB management tool, Elasticsearch management tool, open-source database client, free DynamoDB client, AI database assistant, JSON5 support, DynamoDB data visualization, Elasticsearch data visualization, cross-platform database tool, Mac database client, Windows database client, Linux database client'
         }], ['meta', {property: 'og:title', content: title}],
         ['meta', {property: 'og:description', content: desc}],
         ['meta', {property: 'og:image', content: href}],
@@ -114,7 +114,7 @@ export default defineConfig({
         ['meta', {name: 'description', content: descZh}],
         ['meta', {
           name: 'keywords',
-          content: 'DocKit, AI 原生数据库客户端, AI 驱动数据库管理, NoSQL 图形化客户端, Elasticsearch 图形化客户端, OpenSearch 图形化客户端, DynamoDB 图形化客户端, AI 数据库助手, 大语言模型数据库工具, 智能查询构建器, AI 查询优化, Elasticsearch 桌面客户端, OpenSearch 桌面客户端, DynamoDB 桌面客户端, Elasticsearch 管理工具, DynamoDB 管理工具, PartiQL 编辑器, Elasticsearch 数据可视化, DynamoDB 数据可视化, NoSQL 数据库管理, 跨平台客户端, 开源数据库客户端, Mac 数据库客户端, Windows 数据库客户端, Linux 数据库客户端, 多数据库支持'
+          content: 'Elasticsearch 客户端, OpenSearch 客户端, DynamoDB 客户端, Elasticsearch GUI, OpenSearch GUI, DynamoDB GUI, NoSQL 图形化客户端, Elasticsearch 桌面客户端, OpenSearch 桌面客户端, DynamoDB 桌面客户端, PartiQL 编辑器, AI 数据库助手, Elasticsearch 管理工具, DynamoDB 管理工具, Elasticsearch 数据可视化, DynamoDB 数据可视化, 开源数据库客户端, JSON5 支持, 跨平台客户端, Mac 数据库客户端, Windows 数据库客户端, Linux 数据库客户端, 多数据库支持'
         }],
         ['meta', {property: 'og:title', content: titleZh}],
         ['meta', {property: 'og:description', content: descZh}],

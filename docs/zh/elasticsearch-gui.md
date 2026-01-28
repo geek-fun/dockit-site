@@ -1,6 +1,25 @@
 ---
 title: Elasticsearch GUI 客户端 - 适用于 Mac、Windows、Linux 的免费桌面工具
 description: DocKit 是一个免费的开源 Elasticsearch GUI 客户端，具有可视化查询构建器、Dev Tools 替代方案以及用于 Mac、Windows 和 Linux 的集群管理功能。
+head:
+  - - meta
+    - name: keywords
+      content: Elasticsearch GUI, Elasticsearch 客户端, Elasticsearch 桌面客户端, Kibana 替代方案, Elasticsearch Dev Tools, Elasticsearch 查询构建器, Elasticsearch 管理工具, 免费 Elasticsearch 客户端, 开源 Elasticsearch, Elasticsearch 数据浏览器, Elasticsearch JSON5, Elasticsearch 集群管理, Elasticsearch Mac 客户端, Elasticsearch Windows 客户端
+  - - link
+    - rel: canonical
+      href: https://dockit.geekfun.club/zh/elasticsearch-gui
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://dockit.geekfun.club/elasticsearch-gui
+  - - link
+    - rel: alternate
+      hreflang: zh
+      href: https://dockit.geekfun.club/zh/elasticsearch-gui
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://dockit.geekfun.club/elasticsearch-gui
 sidebar: false
 ---
 

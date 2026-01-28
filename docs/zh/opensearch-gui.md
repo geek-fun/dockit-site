@@ -1,6 +1,25 @@
 ---
 title: OpenSearch GUI 客户端 - 适用于 Mac、Windows、Linux 的免费桌面工具
 description: DocKit 是一个免费的开源 OpenSearch GUI 和 OpenSearch Dashboards 替代方案。可视化查询构建器、Dev Tools 和集群管理，适用于 Mac、Windows 和 Linux。
+head:
+  - - meta
+    - name: keywords
+      content: OpenSearch GUI, OpenSearch 客户端, OpenSearch 桌面客户端, OpenSearch Dashboards 替代方案, AWS OpenSearch 客户端, OpenSearch 查询构建器, OpenSearch 管理工具, 免费 OpenSearch 客户端, 开源 OpenSearch, OpenSearch 数据浏览器, OpenSearch JSON5, OpenSearch 集群管理, OpenSearch Mac 客户端, OpenSearch Windows 客户端
+  - - link
+    - rel: canonical
+      href: https://dockit.geekfun.club/zh/opensearch-gui
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://dockit.geekfun.club/opensearch-gui
+  - - link
+    - rel: alternate
+      hreflang: zh
+      href: https://dockit.geekfun.club/zh/opensearch-gui
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://dockit.geekfun.club/opensearch-gui
 sidebar: false
 ---
 

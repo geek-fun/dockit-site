@@ -1,6 +1,25 @@
 ---
 title: Dynobase 替代方案 - 免费开源 DynamoDB 客户端
 description: 寻找 Dynobase 替代方案？DocKit 是一个免费的开源 DynamoDB GUI 客户端，具有 PartiQL 编辑器、可视化查询构建器，无需订阅。
+head:
+  - - meta
+    - name: keywords
+      content: Dynobase 替代方案, 免费 Dynobase 替代方案, DynamoDB GUI, DynamoDB 客户端, DynamoDB 桌面工具, PartiQL 编辑器, DynamoDB 管理, 开源 DynamoDB 客户端, DynamoDB 工具对比, Dynobase vs DocKit, 免费 DynamoDB 工具, NoSQL GUI 客户端, DynamoDB 可视化编辑器, DynamoDB 查询构建器
+  - - link
+    - rel: canonical
+      href: https://dockit.geekfun.club/zh/dynobase-alternative
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://dockit.geekfun.club/dynobase-alternative
+  - - link
+    - rel: alternate
+      hreflang: zh
+      href: https://dockit.geekfun.club/zh/dynobase-alternative
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://dockit.geekfun.club/dynobase-alternative
 sidebar: false
 ---
 

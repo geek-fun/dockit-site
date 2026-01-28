@@ -1,6 +1,25 @@
 ---
 title: Dynobase Alternative - Free Open-Source DynamoDB Client
 description: Looking for a Dynobase alternative? DocKit is a free, open-source DynamoDB GUI client with PartiQL editor, visual query builder, and no subscription required.
+head:
+  - - meta
+    - name: keywords
+      content: Dynobase alternative, free Dynobase alternative, DynamoDB GUI, DynamoDB client, DynamoDB desktop tool, PartiQL editor, DynamoDB management, open source DynamoDB client, DynamoDB tool comparison, Dynobase vs DocKit, free DynamoDB tool, NoSQL GUI client, DynamoDB visual editor, DynamoDB query builder
+  - - link
+    - rel: canonical
+      href: https://dockit.geekfun.club/dynobase-alternative
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://dockit.geekfun.club/dynobase-alternative
+  - - link
+    - rel: alternate
+      hreflang: zh
+      href: https://dockit.geekfun.club/zh/dynobase-alternative
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://dockit.geekfun.club/dynobase-alternative
 sidebar: false
 ---
 
