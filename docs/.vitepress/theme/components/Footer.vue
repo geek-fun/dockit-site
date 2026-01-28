@@ -5,26 +5,28 @@
         <div class="footer-section">
           <h3>{{ t.products }}</h3>
           <ul>
-            <li><a href="https://dockit.geekfun.club/">DocKit</a></li>
-            <li><a href="https://serverlessinsight.com/" target="_blank">ServerlessInsight</a></li>
-            <li><a href="https://github.com/geek-fun/jest-search" target="_blank">jest-search</a></li>
-            <li><a href="https://github.com/geek-fun/serverless-adapter" target="_blank" class="no-wrap">serverless-adapter</a></li>
+            <li><a :href="localePath('/dynamodb-gui')">{{ t.dynamodbGui }}</a></li>
+            <li><a :href="localePath('/elasticsearch-gui')">{{ t.elasticsearchGui }}</a></li>
+            <li><a :href="localePath('/opensearch-gui')">{{ t.opensearchGui }}</a></li>
+            <li><a :href="localePath('/dynobase-alternative')">{{ t.dynobaseAlt }}</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
-          <h3>{{ t.databases }}</h3>
+          <h3>{{ t.features }}</h3>
           <ul>
-            <li><a href="https://www.elastic.co/elasticsearch" target="_blank">Elasticsearch</a></li>
-            <li><a href="https://opensearch.org/" target="_blank">OpenSearch</a></li>
-            <li><a href="https://aws.amazon.com/dynamodb/" target="_blank">DynamoDB</a></li>
+            <li><a :href="localePath('/features/dynamodb-partiql')">{{ t.partiql }}</a></li>
+            <li><a :href="localePath('/features/local-first')">{{ t.localFirst }}</a></li>
+            <li><a :href="localePath('/features/desktop-client')">{{ t.desktopClient }}</a></li>
+            <li><a :href="localePath('/features/open-source')">{{ t.opensource }}</a></li>
           </ul>
         </div>
 
         <div class="footer-section">
           <h3>{{ t.resources }}</h3>
           <ul>
-            <li><a :href="localePath('/docs')">{{ t.docs }}</a></li>
+            <li><a :href="localePath('/docs/installation')">{{ t.installation }}</a></li>
+            <li><a :href="localePath('/docs/connect-to-server')">{{ t.connect }}</a></li>
             <li><a :href="localePath('/download')">{{ t.download }}</a></li>
             <li><a href="https://github.com/geek-fun/dockit" target="_blank">GitHub</a></li>
           </ul>
@@ -33,9 +35,9 @@
         <div class="footer-section">
           <h3>{{ t.community }}</h3>
           <ul>
-            <li><a href="https://github.com/geek-fun" target="_blank">{{ t.opensource }}</a></li>
-            <li><a href="https://x.com/Blankll31075" target="_blank">Twitter</a></li>
+            <li><a href="https://x.com/Blankll31075" target="_blank">Twitter/X</a></li>
             <li><a href="https://www.youtube.com/@geekfun-club" target="_blank">YouTube</a></li>
+            <li><a href="https://github.com/geek-fun/dockit/issues" target="_blank">{{ t.support }}</a></li>
           </ul>
         </div>
       </div>
@@ -56,25 +58,43 @@ const { lang } = useData()
 
 const translations = {
   en: {
-    products: 'Products',
-    databases: 'Supported Databases',
+    products: 'Database Clients',
+    features: 'Features',
     resources: 'Resources',
     community: 'Community',
-    docs: 'Documentation',
-    download: 'Download',
+    dynamodbGui: 'DynamoDB GUI Client',
+    elasticsearchGui: 'Elasticsearch GUI Client',
+    opensearchGui: 'OpenSearch GUI Client',
+    dynobaseAlt: 'Dynobase Alternative',
+    partiql: 'PartiQL Editor',
+    localFirst: 'Local-First',
+    desktopClient: 'Desktop Client',
     opensource: 'Open Source',
-    message: 'DocKit is an AI-native, open-source desktop GUI client for Elasticsearch, OpenSearch, and DynamoDB across Mac, Windows and Linux',
+    installation: 'Installation Guide',
+    connect: 'Connect to Database',
+    download: 'Download',
+    support: 'Support & Issues',
+    message: 'Free open-source desktop GUI client for DynamoDB, Elasticsearch, and OpenSearch. Features JSON5 syntax, inline comments, AI assistant, and multi-cluster management. Available for Mac, Windows, and Linux.',
     copyright: 'Copyright © 2023-present <a href="https://github.com/geek-fun">geek-fun</a>'
   },
   zh: {
-    products: '产品',
-    databases: '支持的数据库',
+    products: '数据库客户端',
+    features: '功能特性',
     resources: '资源',
     community: '社区',
-    docs: '文档',
-    download: '下载',
+    dynamodbGui: 'DynamoDB GUI 客户端',
+    elasticsearchGui: 'Elasticsearch GUI 客户端',
+    opensearchGui: 'OpenSearch GUI 客户端',
+    dynobaseAlt: 'Dynobase 替代方案',
+    partiql: 'PartiQL 编辑器',
+    localFirst: '本地优先',
+    desktopClient: '桌面客户端',
     opensource: '开源',
-    message: 'DocKit 是一款 AI 原生的开源图形化客户端，支持 Elasticsearch、OpenSearch 和 DynamoDB，适用于 Mac、Windows 和 Linux',
+    installation: '安装指南',
+    connect: '连接数据库',
+    download: '下载',
+    support: '支持与问题',
+    message: '免费开源的 DynamoDB、Elasticsearch 和 OpenSearch 桌面 GUI 客户端。支持 JSON5 语法、行内注释、AI 助手和多集群管理。适用于 Mac、Windows 和 Linux。',
     copyright: 'Copyright © 2023-present <a href="https://github.com/geek-fun">极客范</a>'
   }
 }

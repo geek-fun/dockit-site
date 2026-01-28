@@ -1,0 +1,205 @@
+---
+title: Elasticsearch GUI 客户端 - 适用于 Mac、Windows、Linux 的免费桌面工具
+description: DocKit 是一个免费的开源 Elasticsearch GUI 客户端，具有可视化查询构建器、Dev Tools 替代方案以及用于 Mac、Windows 和 Linux 的集群管理功能。
+sidebar: false
+---
+
+# Elasticsearch GUI 客户端 - 免费桌面工具
+
+DocKit 是一个**免费的开源 Elasticsearch GUI 客户端**，为开发者和 DevOps 团队提供快速的原生桌面替代方案，替代 Kibana 和基于浏览器的工具。
+
+## 为什么使用 Elasticsearch 桌面客户端？
+
+虽然 Kibana 是 Elasticsearch 的标准 Web UI，但专用的桌面客户端提供了明显的优势：
+
+### ⚡ 性能与速度
+- **原生应用程序**：无浏览器开销或 JVM 启动延迟
+- **即时启动**：< 2 秒 vs. Kibana 的 10-30 秒
+- **更低的资源使用**：~100-200 MB RAM vs. 基于浏览器工具的 500 MB+
+- **直接 API 访问**：无代理层或中间件延迟
+
+### 💾 开发者专注的功能
+- **JSON5 语法支持**：像 JavaScript 对象一样编写查询 - 无需繁琐的双引号
+- **行内注释**：直接在查询中添加 `//` 或 `/* */` 注释，方便文档记录和调试
+- **本地查询存储**：所有查询自动保存为文件
+- **Git 友好**：通过版本控制与团队共享查询
+- **离线查询构建**：无需活动连接即可编写和测试查询
+- **多集群切换**：在环境之间即时切换上下文
+- **自动缩进和格式化**：一键清理凌乱的查询
+- **多语言支持**：使用您偏好的语言使用 DocKit
+- **AI 辅助查询**：OpenAI 集成帮助编写复杂查询
+
+### 🔒 安全与隐私
+- **本地执行**：无云依赖或外部服务器
+- **凭证安全**：连接配置的加密本地存储
+- **审计友好**：完全透明（开源代码）
+- **隔离兼容**：无需互联网访问即可工作
+
+## 🎥 观看 DocKit 实际操作
+
+观看 DocKit 安装和 Elasticsearch 功能的完整演示：
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2rem 0;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+    src="https://www.youtube.com/embed/Y1GpcTnVQTk" 
+    title="DocKit Elasticsearch 安装和功能介绍" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+**视频内容：**
+- 快速安装和设置过程
+- 连接到 Elasticsearch 集群
+- 开发者友好功能的实际演示（JSON5、注释、自动格式化）
+- 集群管理和高级功能
+
+## DocKit Elasticsearch 客户端的主要功能
+
+### 🛠️ Dev Tools 界面
+由 Monaco（VS Code 引擎）驱动的专业查询编辑器：
+
+```json
+GET /products/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {"match": {"category": "electronics"}},
+        {"range": {"price": {"gte": 100, "lte": 500}}}
+      ]
+    }
+  },
+  "aggs": {
+    "avg_price": {"avg": {"field": "price"}}
+  }
+}
+```
+
+**编辑器功能：**
+- **JSON5 语法支持**：像 JavaScript 一样编写查询 - 无需严格的 JSON 双引号
+- **行内注释**：直接在查询中添加 `//` 或 `/* */` 注释，方便文档记录
+- JSON 语法高亮和验证
+- Elasticsearch API 的自动补全
+- 键盘快捷键执行（Cmd/Ctrl + Enter）
+- 自动缩进和格式化/美化 JSON
+- 多光标编辑和查找/替换
+
+**JSON5 示例：**
+```javascript
+GET /products/_search
+{
+  query: {
+    // 搜索价格低于 500 的电子产品
+    bool: {
+      must: [
+        {match: {category: 'electronics'}},  // 不需要引号！
+        {range: {price: {gte: 100, lte: 500}}}
+      ]
+    }
+  },
+  /* 按价格聚合结果 */
+  aggs: {
+    avg_price: {avg: {field: 'price'}}
+  }
+}
+```
+
+> 💡 **为什么 JSON5 很重要**：标准 JSON 到处都需要双引号，而且不允许注释，这使得查询更难阅读和维护。DocKit 的 JSON5 支持让查询编写感觉更自然，并允许您在行内记录查询文档。
+
+### 📊 可视化查询构建器
+为常见操作构建查询而无需编写 JSON：
+
+- 匹配查询（全文搜索）
+- 范围过滤器（日期、数字）
+- 布尔查询（must、should、must_not）
+- 聚合（terms、date_histogram、avg、sum）
+- 排序和分页
+
+### 🗂️ 索引管理
+完整的集群和索引管理：
+
+- **索引操作**：创建、删除、重新索引、刷新
+- **映射查看器**：检查字段类型和设置
+- **别名管理**：创建和修改索引别名
+- **模板管理**：索引模板和组件模板
+- **集群健康**：节点、分片和索引状态
+
+### ⚙️ 集群监控
+实时集群指标：
+
+- **节点状态**：CPU、内存、磁盘使用情况
+- **分片分配**：每个节点的主分片和副本分片
+- **索引统计**：文档数、存储大小、查询率
+- **集群健康**：绿色/黄色/红色状态
+
+### 💾 数据导入/导出
+轻松移动数据：
+
+- **导出查询结果**：JSON、CSV、NDJSON 格式
+- **批量导入**：从文件上传文档
+- **索引快照**：导出整个索引以备份
+- **跨集群复制**：在环境之间移动数据
+
+## Elasticsearch GUI 对比
+
+| 功能 | DocKit | Kibana | Elasticvue |
+|---------|--------|--------|------------|
+| **价格** | 免费（开源） | 免费 | 免费（浏览器扩展） |
+| **平台** | 桌面（Mac/Win/Linux） | Web | 浏览器扩展 |
+| **启动时间** | < 2秒 | 10-30秒 | 即时（扩展） |
+| **内存使用** | 100-200 MB | 500+ MB | 取决于浏览器 |
+| **离线查询构建** | ✅ | ❌ | ❌ |
+| **查询持久化** | ✅ 本地文件 | ⚠️ 保存的对象 | ❌ |
+| **多集群** | ✅ | ✅ | ✅ |
+| **集群监控** | ✅ | ✅ | ✅ |
+| **数据可视化** | ⚠️ 基础 | ✅ 高级 | ❌ |
+| **开源** | ✅ | ✅ | ✅ |
+
+**注意：** Kibana 在数据可视化（图表、仪表板）方面表现出色。将 DocKit 用于开发/管理任务，Kibana 用于业务分析。
+
+## 谁应该使用 DocKit for Elasticsearch？
+
+**非常适合：**
+- **后端开发者**：每天使用 Elasticsearch 构建搜索功能
+- **DevOps/SRE**：管理多个 Elasticsearch 集群
+- **数据工程师**：索引数据并运行聚合查询
+- **隐私敏感的团队**：需要本地工具（无云依赖）
+
+**不太适合：**
+- 业务分析师（使用 Kibana 进行可视化）
+- 非技术用户（GUI 面向开发者）
+
+## 开始使用
+
+### 1. 安装 DocKit
+从 [dockit.geekfun.club/download](/zh/download) 下载
+
+### 2. 连接到 Elasticsearch
+- 本地实例（http://localhost:9200）
+- 远程集群（带身份验证）
+- Elastic Cloud（API 密钥或用户名/密码）
+
+### 3. 运行您的第一个查询
+```json
+GET /_cat/indices?v
+```
+
+### 4. 探索集群
+导航到集群管理部分查看节点、分片和索引健康状况
+
+## 其他资源
+
+- **[安装指南](/zh/docs/installation)** - 分步设置
+- **[连接到服务器](/zh/docs/connect-to-server)** - 配置详情
+- **[管理 Elasticsearch 集群](/zh/docs/manage-elasticsearch-cluster)** - 集群管理指南
+- **[桌面客户端优势](/zh/features/desktop-client)** - 为什么原生应用很重要
+- **[GitHub 存储库](https://github.com/geek-fun/dockit)** - 源代码和问题
+
+## 立即试用 DocKit
+
+体验更快、更专注的管理 Elasticsearch 的方式。下载 DocKit，看看为什么开发者从基于浏览器的工具转向原生桌面客户端。
+
+[立即下载 DocKit](/zh/download) — 免费、开源、随时可用。

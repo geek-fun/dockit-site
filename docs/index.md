@@ -1,11 +1,13 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+title: DocKit – Open-Source NoSQL GUI Client
+description: DocKit is an open-source desktop GUI client for DynamoDB, OpenSearch, and Elasticsearch. A fast, secure Dynobase alternative for developers on Mac, Windows, and Linux.
 
 hero:
   name: "DocKit"
-  text: AI Native NoSQL/NewSQL GUI Client
-  tagline: Manage your Elasticsearch, OpenSearch, and DynamoDB databases with AI-powered assistance across Windows, macOS, and Linux
+  text: Open-Source NoSQL GUI Client for Developers
+  tagline: Fast, secure desktop client for DynamoDB, Elasticsearch, and OpenSearch. AI-powered database management for Windows, macOS, and Linux
   image:
     src: dockit.png
     alt: DocKit logo
@@ -32,6 +34,14 @@ features:
 ::: tip 🎉 Latest News
 DocKit v0.8 Released - Full DynamoDB support is now available! [Read more →](/download)
 :::
+
+## Explore DocKit by Database
+
+DocKit provides specialized GUI clients for each database type:
+
+- **[DynamoDB GUI Client](/dynamodb-gui)** - Visual query builder, PartiQL editor, and the best [Dynobase alternative](/dynobase-alternative) for cost-conscious teams
+- **[Elasticsearch GUI](/elasticsearch-gui)** - Desktop client with Dev Tools, index management, and cluster monitoring
+- **[OpenSearch GUI](/opensearch-gui)** - Open-source OpenSearch desktop tool, perfect for AWS OpenSearch Service
 
 <div align="center" style="padding: 64px;">
 <p style="font-size: 20px;margin: 20px;font-weight: bolder;">Client Screen Short</p>
