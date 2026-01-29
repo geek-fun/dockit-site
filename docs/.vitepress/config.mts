@@ -182,6 +182,57 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname: 'https://dockit.geekfun.club'
+    hostname: 'https://dockit.geekfun.club',
+    transformItems: (items) => {
+      return items.map((item) => {
+        const url = item.url
+        
+        // Highest priority: main landing pages
+        if (url.includes('/dynamodb-gui') || 
+            url.includes('/elasticsearch-gui') || 
+            url.includes('/opensearch-gui') || 
+            url.includes('/dynobase-alternative')) {
+          return {
+            ...item,
+            changefreq: 'weekly',
+            priority: 0.9
+          }
+        }
+        
+        // High priority: homepage and download
+        if (url.endsWith('/') || url.includes('/download')) {
+          return {
+            ...item,
+            changefreq: 'weekly',
+            priority: 1.0
+          }
+        }
+        
+        // Medium-high priority: features and docs
+        if (url.includes('/features/') || url.includes('/docs/')) {
+          return {
+            ...item,
+            changefreq: 'monthly',
+            priority: 0.7
+          }
+        }
+        
+        // Blog posts - medium priority
+        if (url.includes('/blog/')) {
+          return {
+            ...item,
+            changefreq: 'monthly',
+            priority: 0.6
+          }
+        }
+        
+        // Default for other pages
+        return {
+          ...item,
+          changefreq: 'monthly',
+          priority: 0.5
+        }
+      })
+    }
   }
 })
