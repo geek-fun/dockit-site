@@ -1,4 +1,6 @@
 import {defineConfig} from 'vitepress'
+import {readFileSync, writeFileSync} from 'fs'
+import {resolve} from 'path'
 
 const title = "DocKit – Open-Source NoSQL GUI Client";
 const titleZh = "DocKit - 开源 NoSQL GUI 客户端";
@@ -8,7 +10,7 @@ const href = "/favicon.ico";
 
 const sharedThemeConfig = {
   search: {
-    provider: 'local'
+    provider: 'local' as const
   },
   logo: href,
   socialLinks: [
@@ -130,7 +132,6 @@ export default defineConfig({
       ],
       themeConfig: {
         ...sharedThemeConfig,
-        title: titleZh,
         nav: [
           {text: '首页', link: '/zh'},
           {text: '文档', link: '/zh/docs'},
@@ -233,6 +234,110 @@ export default defineConfig({
           priority: 0.5
         }
       })
+    }
+  },
+  buildEnd: async ({ outDir }) => {
+    // Wait for sitemap generation to complete
+    await new Promise(resolve => setTimeout(resolve, 100))
+    
+    const sitemapPath = resolve(outDir, 'sitemap.xml')
+    try {
+      const sitemap = readFileSync(sitemapPath, 'utf-8')
+      
+      // Parse and restructure sitemap for SEO best practices
+      const urlRegex = /<url>[\s\S]*?<\/url>/g
+      const urls = sitemap.match(urlRegex) || []
+      
+      // Group URLs by base path (English version is the canonical)
+      const urlGroups = new Map<string, {
+        en: any,
+        zh: any | null
+      }>()
+      
+      urls.forEach(urlBlock => {
+        const locMatch = urlBlock.match(/<loc>(.*?)<\/loc>/)
+        const lastmodMatch = urlBlock.match(/<lastmod>(.*?)<\/lastmod>/)
+        const changefreqMatch = urlBlock.match(/<changefreq>(.*?)<\/changefreq>/)
+        const priorityMatch = urlBlock.match(/<priority>(.*?)<\/priority>/)
+        
+        if (!locMatch) return
+        
+        const url = locMatch[1]
+        const isZh = url.includes('/zh/')
+        const basePath = url.replace('/zh/', '/').replace(/^https:\/\/[^\/]+/, '')
+        
+        if (!urlGroups.has(basePath)) {
+          urlGroups.set(basePath, { en: null, zh: null })
+        }
+        
+        const data = {
+          url,
+          lastmod: lastmodMatch?.[1],
+          changefreq: changefreqMatch?.[1],
+          priority: priorityMatch?.[1]
+        }
+        
+        const group = urlGroups.get(basePath)!
+        if (isZh) {
+          group.zh = data
+        } else {
+          group.en = data
+        }
+      })
+      
+      // Build optimized sitemap structure
+      let newSitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
+      newSitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+      newSitemap += '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+      
+      urlGroups.forEach((group, basePath) => {
+        const enUrl = group.en?.url || `https://dockit.geekfun.club${basePath}`
+        const zhUrl = group.zh?.url || `https://dockit.geekfun.club/zh${basePath}`
+        
+        // Use highest priority from either language version
+        const priority = group.en?.priority || group.zh?.priority || '0.5'
+        const changefreq = group.en?.changefreq || group.zh?.changefreq || 'monthly'
+        const lastmod = group.en?.lastmod || group.zh?.lastmod
+        
+        // Normalize priority: use same priority for both language versions
+        let normalizedPriority = priority
+        if (basePath === '/' || basePath.includes('/download')) {
+          normalizedPriority = '1.0'
+        } else if (basePath.includes('/dynamodb-gui') || 
+                   basePath.includes('/elasticsearch-gui') || 
+                   basePath.includes('/opensearch-gui') || 
+                   basePath.includes('/dynobase-alternative')) {
+          normalizedPriority = '0.9'
+        } else if (basePath.includes('/features/') || basePath.includes('/docs/')) {
+          normalizedPriority = '0.7'
+        } else if (basePath.includes('/blog/')) {
+          normalizedPriority = '0.6'
+        }
+        
+        newSitemap += '  <url>\n'
+        newSitemap += `    <loc>${enUrl}</loc>\n`
+        
+        // Add hreflang alternates
+        newSitemap += `    <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>\n`
+        if (group.zh) {
+          newSitemap += `    <xhtml:link rel="alternate" hreflang="zh" href="${zhUrl}"/>\n`
+        }
+        newSitemap += `    <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>\n`
+        
+        if (lastmod) {
+          newSitemap += `    <lastmod>${lastmod}</lastmod>\n`
+        }
+        newSitemap += `    <changefreq>${changefreq}</changefreq>\n`
+        newSitemap += `    <priority>${normalizedPriority}</priority>\n`
+        newSitemap += '  </url>\n'
+      })
+      
+      newSitemap += '</urlset>\n'
+      
+      writeFileSync(sitemapPath, newSitemap, 'utf-8')
+      console.log('✓ Sitemap optimized for SEO best practices')
+    } catch (error) {
+      console.warn('Warning: Could not optimize sitemap:', error instanceof Error ? error.message : String(error))
     }
   }
 })
